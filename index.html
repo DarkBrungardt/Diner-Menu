@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47fb2e647c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="diner-styles.css">
+    <script type="text/javascript" src="diner-menu.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>JAVATHEHUTDINER</title>
+</head>
+<body>
+    
+<div class="img-diner"></div>
+
+    <nav class="navbar">
+
+        <div class="menu-wrapper">
+
+            <div class="intro-screen-wrapper">
+                
+                <div class="diner-header">
+
+                    <div class="diner-header-img"></div>
+
+                        <div class="feedback-column-wrapper">
+
+                        <div class="main-message-box message-box-style">
+                            <a href="#" class="nav-branding">JAVA THE HUT</a>
+
+                            <span id="server-chat-box">Hello, welcome to JAVA THE HUT! It will be just a moment before we can seat you. Do you know which menu you'd like to look at today?</span>
+                        </div>
+                    
+                        <div class="intro-menu btn-breakfast-menu time-choice" onclick="setMenuCategory('breakfast')">
+                        Breakfast
+                        </div>
+                        <div class="intro-menu btn-lunch-menu time-choice" onclick="setMenuCategory('lunch')">
+                        Lunch
+                        </div>
+                        <div class="intro-menu btn-dinner-menu time-choice" onclick="setMenuCategory('dinner')">
+                        Dinner
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    
+<div class="menu-display-container">
+
+    <div id="menu-display" class="toggle-visible">
+
+        <div class="menu-header" id="header-specials">
+
+</div>
+
+            <div class="menu-list" id="list-specials"></div>
+                    
+                <div class="menu-header" id="header-sides">
+                        <h2>Hot Sides</h2>
+                </div>
+
+                    <div class="menu-list" id="list-sides"></div>
+
+                        <div class="menu-header" id="header-drinks">
+                        <h2> Drinks </h2>
+                    </div>
+
+                        <div class="menu-list" id="list-drinks"></div>
+                    
+                </div>
+
+            </div>
+
+            <div class="order-display-container">
+
+                <div class="order-header">
+
+                    <h2>Your Order</h2>
+                </div>
+
+                    <div class="order-list" id="order-list-tag">
+                    </div>
+
+                        <div class="total-payment">
+                            <div class="total-payment-header">Your Total!</div>
+                                <div class="total-payment-amount" id="total-payment"></div>
+                        </div>
+
+                                    <div class="buttons-wrapper">
+
+                                        <input type="button" id="reset-btn" class="toggle-visible" value="Restart Order" onclick="delOrderAll()">
+
+                                            <input type="button" id="checkout-btn" class="toggle-visible" value="Checkout" onclick="checkoutButton()">
+                    
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </nav>
+
+            </body>
+        </html>
